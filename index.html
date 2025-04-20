@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Cesar | Especialista Shopify & WordPress - SP</title>
+    <meta name="description" content="Desenvolvedor Freelancer em SP. Crio lojas Shopify que vendem +30% e sites WordPress ultrarrápidos. WhatsApp: (13) 99794-8067">
+    <!-- [CSS e Fontes] -->
+</head>
+<body>
+    <!-- BARRA SUPERIOR COM WHATSAPP -->
+    <div class="whatsapp-bar">
+        <a href="https://wa.me/5513997948067" target="_blank">
+            <i class="fab fa-whatsapp"></i> Orçamento Rápido: (13) 99794-8067
+        </a>
+    </div>
+
+    <!-- HERO COM VÍDEO BACKGROUND -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="assets/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Seu site profissional <span>em 15 dias</span> ou menos</h1>
+            <p class="slogan">De SP para todo Brasil - +30 lojas otimizadas</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn-pulse">QUERO MEU ORÇAMENTO</a>
+                <a href="#projects" class="btn-outline">Ver Cases de Sucesso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROBLEMA/SOLUÇÃO -->
+    <section class="pain-solution">
+        <div class="problem-card">
+            <h3>Seu site atual:</h3>
+            <ul>
+                <li><i class="fas fa-times"></i> Demora para carregar</li>
+                <li><i class="fas fa-times"></i> Design desatualizado</li>
+                <li><i class="fas fa-times"></i> Não converte visitantes</li>
+            </ul>
+        </div>
+        
+        <div class="arrow">➡️</div>
+        
+        <div class="solution-card">
+            <h3>Minha solução:</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Carrega em menos de 2s</li>
+                <li><i class="fas fa-check"></i> Design moderno e responsivo</li>
+                <li><i class="fas fa-check"></i> Otimizado para conversão</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CASES DE SUCESSO -->
+    <section class="case-studies">
+        <h2>Resultados Reais para Meus Clientes</h2>
+        <div class="case-grid">
+            <!-- Case 1 -->
+            <div class="case-card">
+                <div class="before-after">
+                    <img src="assets/loja-antes.jpg" alt="Antes">
+                    <img src="assets/loja-depois.jpg" alt="Depois">
+                </div>
+                <h3>Loja de Cosméticos</h3>
+                <p><strong>+150%</strong> em vendas no primeiro mês</p>
+                <button class="btn-case">Ver Detalhes</button>
+            </div>
+            <!-- [Mais cases...] -->
+        </div>
+    </section>
+
+    <!-- PROCESSO DE TRABALHO -->
+    <section class="work-process">
+        <h2>Como Funciona em 4 Passos Simples</h2>
+        <div class="process-steps">
+            <!-- [Passo 1-4 com ícones] -->
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO AVANÇADO -->
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h2>Pronto para Alavancar Seu Negócio?</h2>
+            <form>
+                <div class="form-group">
+                    <label>Qual solução você precisa?</label>
+                    <select>
+                        <option>Loja Virtual Shopify</option>
+                        <option>Site WordPress</option>
+                        <option>Outra solução</option>
+                    </select>
+                </div>
+                <!-- [Mais campos] -->
+                <button type="submit" class="btn-pulse">ENVIAR PROPOSTA</button>
+            </form>
+        </div>
+        
+        <div class="guarantee-badge">
+            <img src="assets/garantia-7dias.png" alt="Garantia 7 dias">
+        </div>
+    </section>
+
+    <!-- RODAPÉ COM LINKS -->
+    <footer>
+        <div class="footer-cta">
+            <h3>Aceito apenas 3 projetos por mês!</h3>
+            <p>Vagas disponíveis este mês: <span class="spots">2</span></p>
+            <a href="https://wa.me/5513997948067" class="btn-pulse">
+                <i class="fab fa-whatsapp"></i> FALE AGORA
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Contador de vagas dinâmico
+        const updateSpots = () => {
+            const spots = document.querySelector('.spots');
+            const now = new Date();
+            spots.textContent = now.getDate() > 15 ? 1 : 2;
+        };
+        updateSpots();
+    </script>
+</body>
+</html>
